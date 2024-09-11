@@ -1,22 +1,28 @@
 import './App.css'
-import RandomBoxColor from './components/RandomBoxColor'
-import Product from './components/Product'
-import { products } from './products.json'
+import { useState } from 'react'
+import CookieBox from './components/CookieBox'
 
 function App() {
-
-
 
   return (
     <div className={"App"}>
 
-      {products.map(product => <Product product={product} />)}
+      <div style={{ color: "white" }}>
+        Total 🍪: {0}
+      </div>
+      <div style={{ color: "white" }}>
+        Total ⚜️: {0}
+      </div>
 
-
-
+      <div className='game'>
+        <CookieBox />
+        <CookieBox />
+        <CookieBox />
+        <CookieBox />
+        <CookieBox />
+      </div>
 
     </div>
-
   )
 }
 

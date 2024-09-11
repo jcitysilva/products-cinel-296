@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: #ffffff;
+  background-color: #181818;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -44,7 +44,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #ffffff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -167,4 +166,17 @@ button:focus-visible {
 
 .product .stock-message.in-stock{
   background-color: rgb(117, 209, 131);
+}
+
+.nuggets{
+  background-color: brown;
+}
+
+.game{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 40px;
+  padding: 40px;
 }
