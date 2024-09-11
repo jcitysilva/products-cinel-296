@@ -1,38 +1,44 @@
-import React from 'react'
-import { useState } from 'react'
-
-// No clique, implementar a probabilidade de:
-
-// em 1 em cada 30 cliques, estourar o número de cookies
-// e de pepitas (ambos passam a zero)
-
-// em 1 em cada 50 cliques, ganhar o estado "lucky"
-// que passa a aumentar 2 cookies por clique
-// (alterar o fundo de cor)
+import React, { useState } from 'react';
 
 function CookieBox() {
-
-    const [cookies, setCookies] = useState(0)
-    const [nuggets, setNuggets] = useState(0)
+    const [cookies, setCookies] = useState(0);
+    const [nuggets, setNuggets] = useState(0);
+    const [lucky, setLucky] = useState(false); // Novo estado para "lucky"
 
     const handleClick = () => {
-
-        if (Math.random() < 0.2) {
-            setNuggets(nuggets + 1)
+        // Probabilidade de estourar cookies e nuggets: 1 em 30 cliques
+        if (Math.random() < 1 / 30) {
+            setCookies(0);
+            setNuggets(0);
+            setLucky(false); // Resetar o estado de lucky
+            alert('Oh no! Your cookies and nuggets are reset to zero.');
+            return; // Sai da função para não adicionar cookies nesse clique
         }
 
-        setCookies(cookies + 1)
-    }
+        // Probabilidade de ganhar o estado "lucky": 1 em 20 cliques
+        if (!lucky && Math.random() < 1 / 20) {
+            setLucky(true);
+            alert('You are now lucky! Double cookies for each click!');
+        }
 
-    let backgroundColor = cookies >= 50 ? "#fcba03" : "gray"
+        // Se estiver no estado "lucky", adiciona 2 cookies por clique
+        setCookies(cookies + (lucky ? 2 : 1));
+
+        // Probabilidade de adicionar pepitas/nuggets (20%)
+        if (Math.random() < 0.2) {
+            setNuggets(nuggets + 1);
+        }
+    };
+
+    // Cor de fundo alterada se estiver no estado "lucky"
+    let backgroundColor = lucky ? "#fcba03" : "gray";
 
     return (
         <button onClick={handleClick} style={{ backgroundColor }}>
             <div>Cookies: {cookies}</div>
-
             {nuggets > 0 && <div className='nuggets'>{nuggets} {nuggets === 1 ? "nugget" : "nuggets"}!</div>}
         </button>
-    )
+    );
 }
 
-export default CookieBox
+export default CookieBox;
