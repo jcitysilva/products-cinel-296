@@ -1,0 +1,16 @@
+{
+    "categoryUiRules": {
+        "Electronics": {
+            "backgroundColor": "#ccccff",
+            "color": "black"
+        },
+        "Computers": {
+            "backgroundColor": "#334488",
+            "color": "white"
+        },
+        "Wearable": {
+            "backgroundColor": "#bbbbbb",
+            "color": "black"
+        }
+    }
+}

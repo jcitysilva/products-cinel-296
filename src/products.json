@@ -1,0 +1,129 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Smartphone",
+            "brand": "TechBrand",
+            "category": "Electronics",
+            "price": 799.99,
+            "currency": "EUR",
+            "specifications": {
+                "screen_size": "6.5 inches",
+                "battery": "4500mAh",
+                "camera": "12MP",
+                "storage": "128GB",
+                "RAM": "8GB"
+            },
+            "availability": {
+                "stock": 150,
+                "delivery_options": [
+                    "Standard",
+                    "Express"
+                ]
+            },
+            "warranty": "2 years",
+            "color": "Black",
+            "ratings": 4.5
+        },
+        {
+            "id": 2,
+            "name": "Laptop",
+            "brand": "CompuTech",
+            "category": "Computers",
+            "price": 1199.50,
+            "currency": "EUR",
+            "specifications": {
+                "processor": "Intel i7",
+                "RAM": "16GB",
+                "storage": "512GB SSD",
+                "screen_size": "15.6 inches",
+                "graphics_card": "NVIDIA GTX 1650"
+            },
+            "availability": {
+                "stock": 75,
+                "delivery_options": [
+                    "Standard",
+                    "Express"
+                ]
+            },
+            "warranty": "1 year",
+            "color": "Silver",
+            "ratings": 4.8
+        },
+        {
+            "id": 3,
+            "name": "Smartwatch",
+            "brand": "FitGenius",
+            "category": "Wearable",
+            "price": 299.90,
+            "currency": "EUR",
+            "specifications": {
+                "battery_life": "7 days",
+                "display": "AMOLED",
+                "water_resistance": "5 ATM",
+                "heart_rate_monitor": "Yes",
+                "GPS": "Yes"
+            },
+            "availability": {
+                "stock": 100,
+                "delivery_options": [
+                    "Standard",
+                    "Express"
+                ]
+            },
+            "warranty": "1 year",
+            "color": "Black",
+            "ratings": 4.3
+        },
+        {
+            "id": 4,
+            "name": "Gaming Console",
+            "brand": "GameStation",
+            "category": "Electronics",
+            "price": 499.99,
+            "currency": "EUR",
+            "specifications": {
+                "storage": "1TB",
+                "resolution": "4K",
+                "controllers": "2 included",
+                "wireless_support": "Yes",
+                "online_service": "Yes"
+            },
+            "availability": {
+                "stock": 50,
+                "delivery_options": [
+                    "Standard",
+                    "Express"
+                ]
+            },
+            "warranty": "2 years",
+            "color": "Black",
+            "ratings": 4.7
+        },
+        {
+            "id": 5,
+            "name": "Wireless Headphones",
+            "brand": "AudioMax",
+            "category": "Wearable",
+            "price": 199.99,
+            "currency": "EUR",
+            "specifications": {
+                "battery_life": "30 hours",
+                "noise_cancellation": "Active",
+                "connectivity": "Bluetooth 5.0",
+                "charging_time": "2 hours",
+                "microphone": "Built-in"
+            },
+            "availability": {
+                "stock": 200,
+                "delivery_options": [
+                    "Standard",
+                    "Express"
+                ]
+            },
+            "warranty": "1 year",
+            "color": "White",
+            "ratings": 4.6
+        }
+    ]
+}
